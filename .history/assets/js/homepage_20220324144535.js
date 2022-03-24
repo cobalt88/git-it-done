@@ -10,7 +10,7 @@ var getUserRepos = function(user) {
   fetch(apiUrl).then(function(response) {
     console.log(response);
     response.json().then(function(data) {
-      displayRepos(data, user);
+      console.log(data);
     });
   });
 };
@@ -27,11 +27,6 @@ if (username) {
   alert("Please enter a GitHub username");
 }
   // console.log(event);
-};
-
-var displayRepos = function(repos, searchTerm) {
-  console.log(repos);
-  console.log(searchTerm);
 };
 
 

@@ -11,6 +11,7 @@ var getUserRepos = function(user) {
     console.log(response);
     response.json().then(function(data) {
       displayRepos(data, user);
+      // console.log(data);
     });
   });
 };

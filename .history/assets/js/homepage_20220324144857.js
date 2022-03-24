@@ -10,7 +10,8 @@ var getUserRepos = function(user) {
   fetch(apiUrl).then(function(response) {
     console.log(response);
     response.json().then(function(data) {
-      displayRepos(data, user);
+      displayRepos(data, user)
+      // console.log(data);
     });
   });
 };
